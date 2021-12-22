@@ -610,8 +610,9 @@
 // });
 
 // map function-*-*-----------------------------------------------
-const movements=[200,450,-400,3000,-650,-130,70,1300]
-// const a=1.1;
+// const movements=[200,450,-400,3000,-650,-130,70,1300]
+// const a=1.2;
+// 1.
 // const movement=movements.map(function (mov)
 // {
 //     return mov*a;
@@ -619,39 +620,108 @@ const movements=[200,450,-400,3000,-650,-130,70,1300]
 // console.log(movements);
 // console.log(movement);
 
-// const a=movements.map(function (mov=>mov*a)
+// 2.
+// let a=1.5;
+// let an=movements.map(mov=>mov*a)
 // console.log(movements)
-// console.log(a)
+// console.log(an)
 
-const b=[]
-for(const mov of movements) b.push(mov*a);
-console.log(b)
+// 3.
+// const b=[]
+// for(const mov of movements) b.push(mov*a);
+// console.log(b)
+
+// const md=movements.map((mov,i)=> `${i+1}: you ${mov>0?'deposited'+"--":'withdrow'+"---"}${Math.abs(mov)}`
+// );
+// console.log(md)
+
+//-------------- filter---------------------
+
+// const movement=[200,450,-400,3000,-650,-130,70,1300]
+
+//1. 
+// const deposit=movement.filter(function(mov,i,arr)
+// {
+//     return mov>0;
+// });
+// console.log(movement);
+// console.log(deposit);
+
+// 2.
+// const depositfor=[];
+// for(const mov of movement)if(mov>0)depositfor.push(mov);
+// console.log(movement);
+
+// console.log(depositfor);
+
+// const withdrow=movement.filter(mov=>mov<0);
+// console.log(withdrow)
 
 
+// --------------Sort Function-------------``
+// 1.
+// let myarray=[1,8,022,32,46,6,55,76]
+// myarray.sort();
+// console.log(myarray);
+
+ //2. 
+// myarray.sort((a,b)=>{return b>5})
+// console.log(myarray)
+
+// ---------some function--------------------
+// let myarray=[1,8,022,32,46,6,55,76]
+
+// console.log(myarray.some((v,i)=>{return v>5}))
+
+// let myarray1=[1,8,022,32,46,6,55,76]
+// console.log(myarray1.some((v,i)=>{return v==2}))
+
+// -----------every function-----------------------
+// let myarray=[1,8,022,32,46,6,55,76]
+// console.log(myarray.every((v,i)=>{return v==3}))
+
+// console.log(myarray.every((v,i)=>{return v=8}))
 
 
+// --------------filter function--------------------
+// let myarray=[1,3,5,8,02,32,46,6,55,76]
+// console.log(myarray.filter((v,i)=>{return v>3}))
 
 
+// *----------------------array Destructuring-------------------
+// let x=10,y=20;
+// [x,y]=[y,x];
+// console.log("X : ",x)
+// console.log("Y : ",y)
+
+// function result(m1,m2,m3)
+// {
+//     return[
+//         m1+m2+m3,
+//         (m1+m2+m3)/3,
+//     ]
+// }
+// let[total,pr]=result(43,65,54)
+// console.log(total,"-",pr);
+
+// function getmark(){
+//     return[34,54,65,52,98]
+// }
+// let marks=getmark();
+// console.log(marks);
+
+// let [m1,m2,m3,...m4]=getmark();
+// console.log("m1 ",m1)
+// console.log("m2 ",m2)
+// console.log("m3 ",m3)
+// console.log("m4 ",m4)
 
 
+function myName(name) {
+  console.log("My name is " + name);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+myName("Nirbhay");
 
 
 
