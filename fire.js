@@ -609,10 +609,10 @@
 //     }
 // });
 
-// map function-*-*-----------------------------------------------
+// ------------------map function-*-*-----------------------------------------------
 // const movements=[200,450,-400,3000,-650,-130,70,1300]
 // const a=1.2;
-// 1.
+// // 1.
 // const movement=movements.map(function (mov)
 // {
 //     return mov*a;
@@ -660,11 +660,11 @@
 
 // --------------Sort Function-------------``
 // 1.
-// let myarray=[1,8,022,32,46,6,55,76]
+// let myarray=[1,8,0,22,32,46,6,55,76]
 // myarray.sort();
 // console.log(myarray);
 
- //2. 
+// //  2. 
 // myarray.sort((a,b)=>{return b>5})
 // console.log(myarray)
 
@@ -717,11 +717,11 @@
 // console.log("m4 ",m4)
 
 
-function myName(name) {
-  console.log("My name is " + name);
-}
+// function myName(name) {
+//   console.log("My name is " + name);
+// }
 
-myName("Nirbhay");
+// myName("Nirbhay");
 
 
 
